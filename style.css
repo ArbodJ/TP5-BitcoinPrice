@@ -57,11 +57,18 @@ button {
   padding: 5px 0;
   border-radius: 10px;
   border: none;
+  font-weight: bold;
   transition: 0.3s;
+}
+#start {
+  color: green;
 }
 #start:hover {
   background: greenyellow;
   box-shadow: 3px 3px 7px 1px green;
+}
+#stop {
+  color: red;
 }
 #stop:hover {
   background: #ff8a8a;
@@ -69,7 +76,11 @@ button {
 }
 #devise {
   font-size: 25px;
-  text-shadow: 2px 2px 1px cyan;
+  color: whitesmoke;
+  text-shadow: 2px 2px 3px cyan;
+}
+#number {
+  color: whitesmoke;
 }
 /*-----*/
 footer {
