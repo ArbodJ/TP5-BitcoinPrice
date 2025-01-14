@@ -15,7 +15,6 @@ requete.onload = function () {
   if (requete.readyState === XMLHttpRequest.DONE) {
     if (requete.status === 200) {
       let resp = requete.response;
-      console.log(resp);
       btnStart.addEventListener("click", () => {
         interval = setInterval(() => {
           nbr.textContent = resp.EUR.last;
