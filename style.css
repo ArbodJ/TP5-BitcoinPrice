@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background: linear-gradient(black, cyan);
+}
+/*-----*/
+header {
+  display: flex;
+  align-items: center;
+  height: 35px;
+}
+h1 {
+  background: #464646;
+  color: blue;
+  text-shadow: 2px 2px 1px cyan;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px cyan;
+  padding: 5px 15px;
+  font-size: 12px;
+}
+/*-----*/
+main {
+  border-radius: 20px;
+  background: #464646;
+  box-shadow: 4px 4px 1px cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  height: 320px;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+h2 {
+  font-size: 50px;
+  text-shadow: 1px 1px 1px cyan, 2px 2px 7px white;
+}
+h3 {
+  font-size: 30px;
+  text-shadow: 1px 1px 1px cyan, 2px 2px 7px white;
+}
+button {
+  width: 100px;
+  padding: 5px 0;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s;
+}
+#start:hover {
+  background: greenyellow;
+  box-shadow: 3px 3px 7px 1px green;
+}
+#stop:hover {
+  background: #ff8a8a;
+  box-shadow: 3px 3px 7px 1px red;
+}
+#devise {
+  font-size: 25px;
+  text-shadow: 2px 2px 1px cyan;
+}
+/*-----*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  border: 1px solid #464646;
+  border-radius: 15px;
+  background: cyan;
+}
+#prod {
+  font-size: 12px;
+}
+#logoContainer {
+  display: flex;
+  align-items: center;
+}
+#logoTxt {
+  font-size: 12px;
+}
+.logo {
+  width: 15px;
+  height: 15px;
+}
+/*--------------*/
+/*---RESPONIV---*/
+/*--------------*/
+@media screen and (min-width: 768px) {
+  main {
+    width: 300px;
+    height: 350px;
+  }
+  #container {
+    height: 330px;
+  }
+  h2 {
+    font-size: 75px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  button {
+    font-size: 16px;
+  }
+  #devise {
+    font-size: 40px;
+  }
+  /*-----*/
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    padding: 5px 0;
+  }
+  #prod,
+  #logoTxt {
+    font-size: 15px;
+  }
+  .logo {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    width: 400px;
+    height: 450px;
+  }
+  #container {
+    height: 430px;
+  }
+  h2 {
+    font-size: 90px;
+  }
+  h3 {
+    font-size: 50px;
+  }
+  /*-----*/
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 600px;
+    padding: 5px 0;
+  }
+  #prod,
+  #logoTxt {
+    font-size: 20px;
+  }
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+}
